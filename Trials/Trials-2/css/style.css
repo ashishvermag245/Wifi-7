@@ -1,0 +1,393 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+a,li {
+    text-decoration: none;
+    list-style: none;
+}
+ /* _______________ Header ___________________  */
+header {
+    background: #F4F5F6;
+    padding: 0 40px;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid var(--Border-border-primary-default, #D6D6D6);
+
+}
+nav .trial-header-logo {
+    padding: 12px 0;
+}
+nav .trial-header-logo h2{
+    color:  #19191D;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px; 
+    letter-spacing: -0.32px;
+    margin: 0;
+}
+.trial-header-menu {
+    padding: 26px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.trial-header-menu .trial-dropdown {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    cursor: pointer;
+}
+.trial-header-menu span {
+    color:  #1b1c1d;
+font-size: 14px;
+font-weight: 700;
+line-height: 20px; 
+}
+.trial-header-menu .trials-days {
+    color:  #0070D2;
+font-size: 14px;
+font-weight: 500;
+line-height: 20px; 
+}
+.trial-divider {
+    margin: 0 8px;
+    width: 2px;
+    height: 12px;
+    background-color: #D6D6D6;
+}
+.trial-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    background: #ffffff;
+    border-radius: 4px;
+    border: 1px solid var(--Border-border-primary-default, #D6D6D6);
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
+}
+.trial-dropdown-menu ul {
+    padding: 0;
+    width: 160px;
+margin: 0;
+}
+.trial-dropdown-menu li {
+    padding: 10px 16px;
+}
+.trial-dropdown-menu li:hover {
+    background-color: #F4F5F6;
+}
+.trial-dropdown-menu a {
+    color: #606162;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+/* .trial-dropdown {
+    position: relative;
+} */
+ /* _______________ Header ___________________  */
+  /* _______________ Customer Trials Section ___________________  */
+section {
+    background: #F4F5F6;
+    padding: 16px 40px 0;
+}
+.trial-showcase {
+    display: flex;
+    gap: 16px;
+}
+.trial-showcase .customer-trial {
+    max-width: 75%;
+    width: 100%;
+}
+
+
+.customer-trial-tabs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.trial-sort {
+    border-radius: 64px;
+    background: #FFFFFF;
+    display: flex;
+    padding: 8px 16px;
+    align-items: center;
+    gap: 15px;
+}
+.trial-sort span {
+    color: #0070D2;
+font-size: 14px;
+font-weight: 500;
+line-height: 20px;
+}
+.trial-navtabs {
+    display: flex;
+    gap: 24px;
+    padding: 10px 20px 10px 0;
+    position: relative;
+  }
+  .trial-navtab {
+    cursor: pointer;
+    color: #1b1c1d;
+    transition: color 0.3s;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .trial-navtab.tr-active {
+    font-weight: 700;
+  }
+  .trial-underline {
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    border-radius: 4px;
+    background: #0070D2;
+    transition: left 0.3s ease, width 0.3s ease;
+  }
+  .trial-content {
+    display: none;
+    
+  }
+  .trial-content.tr-active {
+    display: block;
+  }
+  /* _______________ Customer Trials Section ___________________  */
+
+  /* -------------------- plan-trial side bar ------------------- */
+  
+  .trial-showcase .plan-trial {
+    max-width: 25%;
+    width: 100%;
+}
+.customer-trial-title h5 , .plan-trial-title h5 {
+    color:  #1B1C1D;
+font-size: 20px;
+font-weight: 700;
+line-height: 24px;
+margin: 0 0 8px;
+}
+.plan-trial-title .plan-trial-para {
+    color: #1B1C1D;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+margin: 0; 
+}
+  .plan-trial-title {
+    margin-bottom: 12px;
+}
+  .plan-trial-cards {
+margin-bottom: 8px;
+  }
+  .plan-trial-cards .plan-trial-cardList {
+    display: flex;
+    padding: 12px;
+    align-items: flex-start;
+    gap: 12px;
+    border-left: 2px solid  #C6800F;
+    background:  #FFFFFF;
+    margin-bottom: 8px;
+  }
+  .trial-content-cardList .cardList-title {
+    color: #1b1c1d;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  
+.trial-content-cardList p  {
+    color: #606162;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0;
+    display: block;
+  }
+  .plan-trial-anchor-cardList {
+    color: #0070D2;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+}
+/* -------------------- plan-trial side bar ------------------- */
+/* -------------------- customer-trial side bar ------------------- */
+.customer-trial-cardList {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    border-radius: 4px;
+    background: #FFFFFF;
+    padding-right: 24px;
+    margin-bottom: 8px;
+}
+.trial-product-title {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.trial-product-title h5 {
+    color:  #1B1C1D;
+font-size: 20px;
+font-weight: 700;
+line-height: 24px; 
+margin: 0;
+}
+.customer-trial-cardList .trial-product-image {
+    background-image: url(../img/product-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 18px 16px;
+}
+.trial-product-detail {
+    width: 100%;
+    padding: 18px 0;
+}
+.trial-product-config {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+span.trial-config-title {
+    display: block;
+    color: #606162;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    margin-bottom: 6px;
+}
+span.trial-config-content {
+    display: block;
+    color: #1B1C1D;
+    font-size: large;
+    font-weight: 500;
+    line-height: 20px;
+}
+.trial-product-image img {
+    max-width: 130px;
+    height: 80px;
+}
+.trial-sort-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+/* -------------------- customer-trial side bar ------------------- */
+
+/* _____________ badges ____________ */
+.trial-expire-badge {
+    border-radius: 4px;
+    background: #FFDAD8;
+    display: flex;
+    padding: 4px 6px;
+    align-items: center;
+    gap: 4px;
+    color: #1b1c1d;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    width: fit-content;
+    margin:  4px 0;
+}
+.trial-extand-badge {
+    border-radius: 4px;
+    background: #D7EAFC;
+    display: flex;
+    padding: 4px 6px;
+    align-items: center;
+    gap: 4px;
+    color: #1b1c1d;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    width: fit-content;
+    margin:  4px 0;
+}
+.trial-return-badge {
+    border-radius: 4px;
+    background: #EBEBEB;
+    display: flex;
+    padding: 4px 6px;
+    align-items: center;
+    gap: 4px;
+    color: #1b1c1d;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    width: fit-content;
+    margin:  4px 0;
+}
+.trial-product-active-badge {
+    display: flex;
+    padding: 4px 6px;
+    align-items: center;
+    gap: 4px;
+    border-radius: 4px;
+    background: #DDF2D8;
+    color:  #1B1C1D;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+}
+.trial-product-extension-badge {
+    display: flex;
+    padding: 4px 6px;
+    align-items: center;
+    gap: 4px;
+    border-radius: 4px;
+    background: #FFE6BD;
+    color:  #1B1C1D;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+}
+.trial-product-extend-badge {
+    display: flex;
+    padding: 4px 6px;
+    align-items: center;
+    gap: 4px;
+    border-radius: 4px;
+    background: #D7EAFC;
+    color:  #1B1C1D;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+}
+.trial-product-expired-badge {
+    display: flex;
+    padding: 4px 6px;
+    align-items: center;
+    gap: 4px;
+    border-radius: 4px;
+    background: #FFDAD8;
+    color:  #1B1C1D;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+}
+/* _____________ badges ____________ */

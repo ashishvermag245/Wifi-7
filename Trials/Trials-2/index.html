@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trials</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="trial-main">
+      <!-- _______________ Header ___________________ -->
+      <header>
+        <nav>
+          <div class="trial-header-logo">
+            <h2>At-A-Glance</h2>
+          </div>
+          <div class="trial-header-menu">
+            <div class="trial-dropdown">
+              <span>Time Period</span>
+              <span class="trials-days">Last 7 Days</span>
+              <img src="./img/chevron-down.svg" alt="down-chevrons" />
+            </div>
+            <div class="trial-dropdown-menu">
+              <ul>
+                <li><a href="#">Today</a></li>
+                <li><a href="#">Last 7 Days</a></li>
+                <li><a href="#">Last 15 Days</a></li>
+                <li><a href="#">Last 30 Days</a></li>
+                <li><a href="#">Last 90 Days</a></li>
+              </ul>
+            </div>
+            <div class="trial-divider"></div>
+            <div class="trial-dropdown">
+              <span>Currency</span>
+              <span class="trials-days">USD</span>
+              <img src="./img/chevron-down.svg" alt="down-chevrons" />
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- _______________ Header ___________________ -->
+      <!-- _______________ Customer Trials Section ___________________   -->
+      <section>
+        <div class="trial-showcase">
+          <div class="customer-trial">
+            <div class="customer-trial-title">
+              <h5>Customer Trials</h5>
+              <div class="customer-trial-tabs">
+                <div class="trial-navtabs">
+                  <div class="trial-navtab tr-active" data-target="Active">
+                    Active
+                  </div>
+                  <div class="trial-navtab" data-target="Extension">
+                    Extension
+                  </div>
+                  <div class="trial-navtab" data-target="Expired">Expired</div>
+                  <div class="trial-underline"></div>
+                </div>
+                <button class="trial-sort-button">
+                  <div class="trial-sort">
+                    <img src="./img/sort-amount-desc.svg" alt="filter" />
+                    <span>Sort by</span>
+                  </div>
+                </button>
+              </div>
+              <div id="Active" class="trial-content active">
+                <div class="customer-trial-card">
+                  <div class="customer-trial-cardList">
+                    <div class="trial-product-image">
+                      <img src="./img/Network.png" alt="router" />
+                    </div>
+                    <div class="trial-product-detail">
+                      <div class="trial-product-title">
+                        <h5>Cisco Meraki Wifi 7 for Metlife</h5>
+                        <div class="trial-product-active-badge">Active</div>
+                      </div>
+                      <div class="trial-product-config">
+                        <div class="trial-configuration-box">
+                          <span class="trial-config-title">Trial ID</span>
+                          <span class="trial-config-content">93159802 </span>
+                        </div>
+                        <div class="trial-configuration-box">
+                          <span class="trial-config-title"
+                            >Estimated List Value</span
+                          >
+                          <span class="trial-config-content">USD 30,000 </span>
+                        </div>
+                        <div class="trial-configuration-box">
+                          <span class="trial-config-title"
+                            >Products in the Trial</span
+                          >
+                          <span class="trial-config-content">3 </span>
+                        </div>
+                        <div class="trial-configuration-box">
+                          <span class="trial-config-title">Start Date</span>
+                          <span class="trial-config-content"
+                            >Jun 15, 2024
+                          </span>
+                        </div>
+                        <div class="trial-configuration-box">
+                          <span class="trial-config-title">Expiry Date</span>
+                          <span class="trial-config-content"
+                            >Sep 15, 2024
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="customer-trial-cardList">
+                    <div class="trial-product-image">
+                      <img src="./img/product-router-2.png" alt="router" />
+                    </div>
+                    <div class="trial-product-detail">
+                      <div class="trial-product-title">
+                        <h5>Catalyst 9300L-M switch and save</h5>
+                        <div class="trial-product-active-badge">Active</div>
+                      </div>
+                      <div class="trial-product-config">
+                        <div class="trial-configuration-box">
+                          <span class="trial-config-title">Trial ID</span>
+                          <span class="trial-config-content">91276890 </span>
+                        </div>
+                        <div class="trial-configuration-box">
+                          <span class="trial-config-title"
+                            >Estimated List Value</span
+                          >
+                          <span class="trial-config-content">USD 30,000 </span>
+                        </div>
+                        <div class="trial-configuration-box">
+                          <span class="trial-config-title"
+                            >Products in the Trial</span
+                          >
+                          <span class="trial-config-content">3 </span>
+                        </div>
+                        <div class="trial-configuration-box">
+                          <span class="trial-config-title">Start Date</span>
+                          <span class="trial-config-content"
+                            >Jun 01, 2024
+                          </span>
+                        </div>
+                        <div class="trial-configuration-box">
+                          <span class="trial-config-title">Expiry Date</span>
+                          <span class="trial-config-content"
+                            >Sep 01, 2024
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="customer-trial-cardList">
+                    <div class="trial-product-image">
+                      <img src="./img/Cisco.png" alt="router" />
+                    </div>
+                    <div class="trial-product-detail">
+                      <div class="trial-product-title">
+                        <h5>Cisco Catalyst 9163E for Infinx</h5>
+                        <div class="trial-product-active-badge">Active</div>
+                        <div class="trial-product-extension-badge">
+                          Extension Requested
+                        </div>
+                      </div>
+                      <div class="trial-product-config">
+                        <div class="trial-configuration-box">
+                          <span class="trial-config-title">Trial ID</span>
+                          <span class="trial-config-content">92390921 </span>
+                        </div>
+                        <div class="trial-configuration-box">
+                          <span class="trial-config-title"
+                            >Estimated List Value</span
+                          >
+                          <span class="trial-config-content">USD 30,000 </span>
+                        </div>
+                        <div class="trial-configuration-box">
+                          <span class="trial-config-title"
+                            >Products in the Trial</span
+                          >
+                          <span class="trial-config-content">3 </span>
+                        </div>
+                        <div class="trial-configuration-box">
+                          <span class="trial-config-title">Start Date</span>
+                          <span class="trial-config-content"
+                            >Apr 20, 2024
+                          </span>
+                        </div>
+                        <div class="trial-configuration-box">
+                          <span class="trial-config-title">Expiry Date</span>
+                          <span class="trial-config-content"
+                            >Jun 20, 2024
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="customer-trial-cardList">
+                    <div class="trial-product-image">
+                      <img src="./img/Graphics.png" alt="router" />
+                    </div>
+                    <div class="trial-product-detail">
+                      <div class="trial-product-title">
+                        <h5>Cisco Meraki Wifi 7 for Raytheon</h5>
+                        <div class="trial-product-active-badge">Active</div>
+                        <div class="trial-product-extend-badge">Extended</div>
+                      </div>
+                      <div class="trial-product-config">
+                        <div class="trial-configuration-box">
+                          <span class="trial-config-title">Trial ID</span>
+                          <span class="trial-config-content">92390921 </span>
+                        </div>
+                        <div class="trial-configuration-box">
+                          <span class="trial-config-title"
+                            >Estimated List Value</span
+                          >
+                          <span class="trial-config-content">USD 30,000 </span>
+                        </div>
+                        <div class="trial-configuration-box">
+                          <span class="trial-config-title"
+                            >Products in the Trial</span
+                          >
+                          <span class="trial-config-content">3 </span>
+                        </div>
+                        <div class="trial-configuration-box">
+                          <span class="trial-config-title">Start Date</span>
+                          <span class="trial-config-content"
+                            >Apr 10, 2024
+                          </span>
+                        </div>
+                        <div class="trial-configuration-box">
+                          <span class="trial-config-title">Expiry Date</span>
+                          <span class="trial-config-content"
+                            >Jun 25, 2024
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="Extension" class="trial-content">
+                <div class="customer-trial-card">
+                  <div class="customer-trial-cardList">
+                    <div class="trial-product-image">
+                      <img src="./img/modam.png" alt="router" />
+                    </div>
+                    <div class="trial-product-detail">
+                      <div class="trial-product-title">
+                        <h5>Cisco Catalyst 9166 for Seamless Experience</h5>
+                        <div class="trial-product-extension-badge">
+                          Extension Requested
+                        </div>
+                      </div>
+                      <div class="trial-product-config">
+                        <div class="trial-configuration-box">
+                          <span class="trial-config-title">Trial ID</span>
+                          <span class="trial-config-content">92390921 </span>
+                        </div>
+                        <div class="trial-configuration-box">
+                          <span class="trial-config-title"
+                            >Estimated List Value</span
+                          >
+                          <span class="trial-config-content">USD 24,124 </span>
+                        </div>
+                        <div class="trial-configuration-box">
+                          <span class="trial-config-title"
+                            >Products in the Trial</span
+                          >
+                          <span class="trial-config-content">3 </span>
+                        </div>
+                        <div class="trial-configuration-box">
+                          <span class="trial-config-title">Start Date</span>
+                          <span class="trial-config-content"
+                            >Apr 15, 2024
+                          </span>
+                        </div>
+                        <div class="trial-configuration-box">
+                          <span class="trial-config-title">Expiry Date</span>
+                          <span class="trial-config-content"
+                            >Jun 15, 2024
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="Expired" class="trial-content">
+                <div class="customer-trial-card">
+                  <div class="customer-trial-cardList">
+                    <div class="trial-product-image">
+                      <img src="./img/modam.png" alt="router" />
+                    </div>
+                    <div class="trial-product-detail">
+                      <div class="trial-product-title">
+                        <h5>Cisco Catalyst 9163E for Enterprise</h5>
+                        <div class="trial-product-expired-badge">Expired</div>
+                      </div>
+                      <div class="trial-product-config">
+                        <div class="trial-configuration-box">
+                          <span class="trial-config-title">Trial ID</span>
+                          <span class="trial-config-content">92390921 </span>
+                        </div>
+                        <div class="trial-configuration-box">
+                          <span class="trial-config-title"
+                            >Estimated List Value</span
+                          >
+                          <span class="trial-config-content">USD 11,000 </span>
+                        </div>
+                        <div class="trial-configuration-box">
+                          <span class="trial-config-title"
+                            >Products in the Trial</span
+                          >
+                          <span class="trial-config-content">5 </span>
+                        </div>
+                        <div class="trial-configuration-box">
+                          <span class="trial-config-title">Start Date</span>
+                          <span class="trial-config-content"
+                            >Apr 10, 2024
+                          </span>
+                        </div>
+                        <div class="trial-configuration-box">
+                          <span class="trial-config-title">Expiry Date</span>
+                          <span class="trial-config-content"
+                            >Jun 10, 2024
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- --------------------- plan-trial side bar --------------- -->
+          <div class="plan-trial">
+            <div class="plan-trial-title">
+              <h5>Plans for Today</h5>
+              <p class="plan-trial-para">
+                Today's activities include tasks, events, and goals to be<br />
+                completed.
+              </p>
+            </div>
+            <div class="plan-trial-cards">
+              <div class="plan-trial-cardList">
+                <img src="./img/Tesla.svg" alt="brand-logo" />
+                <div class="trial-content-cardList">
+                  <span class="cardList-title">Trial Expiring for Tesla</span>
+                  <div class="trial-expire-badge">Expiring in 10 days</div>
+                  <p>
+                    Needs attention! You need to act fast to convert the trial
+                    into a Order
+                  </p>
+                  <a href="#" class="plan-trial-anchor-cardList"
+                    >View More
+                    <img src="./img/chevron-right.svg" alt="right-chevrons"
+                  /></a>
+                </div>
+              </div>
+              <div class="plan-trial-cardList">
+                <img src="./img/crosswire.svg" alt="brand-logo" />
+                <div class="trial-content-cardList">
+                  <span class="cardList-title"
+                    >Trial Expiring for Crosswire</span
+                  >
+                  <div class="trial-expire-badge">Expiring in 21 days</div>
+                  <a href="#" class="plan-trial-anchor-cardList"
+                    >View More
+                    <img src="./img/chevron-right.svg" alt="right-chevrons"
+                  /></a>
+                </div>
+              </div>
+              <div class="plan-trial-cardList">
+                <img src="./img/googel.svg" alt="brand-logo" />
+                <div class="trial-content-cardList">
+                  <span class="cardList-title">Extend Request from Google</span>
+                  <div class="trial-extand-badge">Extend Request</div>
+                  <p>
+                    Need a 7-day extension for our current Meraki product trial.
+                    This additional time will allow us to further evaluate the
+                    product's features and its suitability for our needs.
+                  </p>
+                  <a href="#" class="plan-trial-anchor-cardList"
+                    >View More
+                    <img src="./img/chevron-right.svg" alt="right-chevrons"
+                  /></a>
+                </div>
+              </div>
+              <div class="plan-trial-cardList">
+                <img src="./img/googel.svg" alt="brand-logo" />
+                <div class="trial-content-cardList">
+                  <span class="cardList-title">Return Request form Google</span>
+                  <div class="trial-return-badge">Return Request</div>
+                  <p>
+                    We wish to return the Meraki products we recently converted.
+                    Despite our initial interest, we have determined that these
+                    products do not meet our current requirements.
+                  </p>
+                  <a href="#" class="plan-trial-anchor-cardList"
+                    >View More
+                    <img src="./img/chevron-right.svg" alt="right-chevrons"
+                  /></a>
+                </div>
+              </div>
+              <div class="plan-trial-cardList">
+                <img src="./img/crosswire.svg" alt="brand-logo" />
+                <div class="trial-content-cardList">
+                  <span class="cardList-title"
+                    >Extend Request form Crosswire</span
+                  >
+                  <div class="trial-extand-badge">Extend Request</div>
+                  <p>
+                    Need a 7-day extension for our current Meraki product trial.
+                    This additional time will allow us to further evaluate the
+                    product's features and its suitability for our needs.
+                  </p>
+                  <a href="#" class="plan-trial-anchor-cardList"
+                    >View More
+                    <img src="./img/chevron-right.svg" alt="right-chevrons"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- --------------------- plan-trial side bar --------------- -->
+        </div>
+      </section>
+      <!-- _______________ Customer Trials Section ___________________   -->
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trials</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="trial-main">
+      <!-- _______________Entry Header ___________________ -->
+      <div class="trial-entry-header">
+        <div class="primary-content">
+          <h2>At-A-Glance</h2>
+
+          <div class="trial-entry-header-menu">
+            <!-- _______________Dropdown ___________________ -->
+
+            <div class="trial-dropdown">
+              <span>Time Period</span>
+              <button class="trial-duration-dropdown trial-dropdown-button">
+                <span class="trial-dropdown-title">Last 7 Days</span>
+                <span class="trial-icon-angle-down"></span>
+              </button>
+            </div>
+            <div class="trial-dropdown-menu duration-trial-dropdown">
+              <ul>
+                <li><a href="#">Today</a></li>
+                <li><a href="#">Last 7 Days</a></li>
+                <li><a href="#">Last 15 Days</a></li>
+                <li><a href="#">Last 30 Days</a></li>
+                <li><a href="#">Last 90 Days</a></li>
+              </ul>
+            </div>
+            <div class="trial-divider"></div>
+            <div class="trial-dropdown currency-trial-dropdown">
+              <span>Currency</span>
+              <button class="trial-currency-dropdown trial-dropdown-button">
+                <span class="trial-dropdown-title">USD</span>
+                <span class="trial-icon-angle-down"></span>
+              </button>
+            </div>
+            <div class="trial-dropdown-menu trial-dropdown-menu-usd">
+              <ul>
+                <li><a href="#">Option 1</a></li>
+                <li><a href="#">Option 2</a></li>
+                <li><a href="#">Option 3</a></li>
+              </ul>
+            </div>
+            <!-- _______________Dropdown ___________________ -->
+          </div>
+        </div>
+      </div>
+      <!-- _______________Entry Header ___________________ -->
+      <!-- _______________ Customer Trials Section ___________________   -->
+
+      <div class="trial-showcase">
+        <div class="customer-trial">
+          <div class="customer-trial-title">
+            <h5>Customer Trials</h5>
+            <!-- _______________ Tabs ___________________ -->
+
+            <div class="customer-trial-tabs">
+              <div class="trial-navtabs">
+                <div class="trial-navtab active" data-target="Active">
+                  Active
+                </div>
+                <div class="trial-navtab" data-target="Extension">
+                  Extension
+                </div>
+                <div class="trial-navtab" data-target="Expired">Expired</div>
+                <div class="trial-underline"></div>
+              </div>
+              <button class="trial-sort-button">
+                <div class="trial-sort">
+                  <span class="trial-icon-sort"></span>
+
+                  <span>Sort by</span>
+                </div>
+              </button>
+              <div class="trial-dropdown-menu trial-dropdown-menu-sort">
+                <ul>
+                  <li><a href="#">Option 1</a></li>
+                  <li><a href="#">Option 2</a></li>
+                  <li><a href="#">Option 3</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- _______________ Tabs ___________________ -->
+            <!-- _______________ Tabs Content ___________________ -->
+
+            <div id="Active" class="trial-content active">
+              <!-- _______________ Card Content ___________________ -->
+
+              <div class="customer-trial-card">
+                <!-- _______________ Card List ___________________ -->
+
+                <div class="customer-trial-cardList">
+                  <div class="trial-product-image">
+                    <img src="./img/Network.png" alt="router" />
+                  </div>
+                  <div class="trial-product-detail">
+                    <div class="trial-product-title">
+                      <h5>Cisco Meraki Wifi 7 for Metlife</h5>
+                      <div class="trial-badge trial-badge-success">Active</div>
+                    </div>
+                    <div class="trial-product-config">
+                      <div class="trial-configuration-box">
+                        <span class="trial-config-title">Trial ID</span>
+                        <span class="trial-config-content">93159802 </span>
+                      </div>
+                      <div class="trial-configuration-box">
+                        <span class="trial-config-title"
+                          >Products in the Trial</span
+                        >
+                        <span class="trial-config-content">3 </span>
+                      </div>
+                      <!-- _______________ Card List Duration Stepper ___________________ -->
+
+                      <div class="trial-duration-config">
+                        <div class="trial-config-date start-date">
+                          <span class="trial-config-title">Start Date</span>
+                          <span class="trial-config-content"
+                            >Jun 15, 2024
+                          </span>
+                        </div>
+                        <ul class="trial-stepper">
+                          <li class="trial-stepper-list">
+                            <span class="trial-dot active"></span>
+                            <div class="trail-progress"></div>
+                            <div class="trial-time-estimation">
+                              <span class="icon-clock"></span
+                              ><strong>88</strong>
+                              days remaining
+                            </div>
+                            <span class="trial-dots"></span>
+                          </li>
+                        </ul>
+                        <div class="trial-config-date expiry-date">
+                          <span class="trial-config-title">Expiry Date</span>
+                          <span class="trial-config-content"
+                            >Sep 15, 2024
+                          </span>
+                        </div>
+                      </div>
+                      <!-- _______________ Card List Duration Stepper ___________________ -->
+                    </div>
+                  </div>
+                  <div class="trial-button-group">
+                    <button
+                      class="btn trial-primary-btn"
+                      onclick="openSidebar()"
+                    >
+                      View Summary
+                    </button>
+                    <button class="btn trial-link">View Details</button>
+                  </div>
+                </div>
+                <!-- _______________ Card List ___________________ -->
+                <div class="customer-trial-cardList">
+                  <div class="trial-product-image">
+                    <img src="./img/product-router-2.png" alt="router" />
+                  </div>
+                  <div class="trial-product-detail">
+                    <div class="trial-product-title">
+                      <h5>Catalyst 9300L-M switch and save</h5>
+                      <div class="trial-badge trial-badge-success">Active</div>
+                    </div>
+                    <div class="trial-product-config">
+                      <div class="trial-configuration-box">
+                        <span class="trial-config-title">Trial ID</span>
+                        <span class="trial-config-content">91276890 </span>
+                      </div>
+                      <div class="trial-configuration-box">
+                        <span class="trial-config-title"
+                          >Products in the Trial</span
+                        >
+                        <span class="trial-config-content">3 </span>
+                      </div>
+                      <!-- _______________ Card List Duration Stepper ___________________ -->
+
+                      <div class="trial-duration-config">
+                        <div class="trial-config-date start-date">
+                          <span class="trial-config-title">Start Date</span>
+                          <span class="trial-config-content"
+                            >Jun 01, 2024
+                          </span>
+                        </div>
+                        <ul class="trial-stepper">
+                          <li class="trial-stepper-list">
+                            <span class="trial-dot active"></span>
+                            <div class="trail-progress"></div>
+                            <div class="trial-time-estimation">
+                              <span class="icon-clock"></span
+                              ><strong>73</strong>
+                              days remaining
+                            </div>
+                            <span class="trial-dots"></span>
+                          </li>
+                        </ul>
+                        <div class="trial-config-date expiry-date">
+                          <span class="trial-config-title">Expiry Date</span>
+                          <span class="trial-config-content"
+                            >Sep 01, 2024
+                          </span>
+                        </div>
+                      </div>
+                      <!-- _______________ Card List Duration Stepper ___________________ -->
+                    </div>
+                  </div>
+                  <div class="trial-button-group">
+                    <button
+                      class="btn trial-primary-btn"
+                      onclick="openSidebar()"
+                    >
+                      View Summary
+                    </button>
+                    <button class="btn trial-link">View Details</button>
+                  </div>
+                </div>
+                <!-- _______________ Card List ___________________ -->
+                <div class="customer-trial-cardList">
+                  <div class="trial-product-image">
+                    <img src="./img/Cisco.png" alt="router" />
+                  </div>
+                  <div class="trial-product-detail">
+                    <div class="trial-product-title">
+                      <h5>Cisco Catalyst 9163E for Infinx</h5>
+                      <div class="trial-badge trial-badge-success">Active</div>
+                      <div class="trial-badge trial-badge-extand">
+                        Extension Requested
+                      </div>
+                    </div>
+                    <div class="trial-product-config">
+                      <div class="trial-configuration-box">
+                        <span class="trial-config-title">Trial ID</span>
+                        <span class="trial-config-content">92390921 </span>
+                      </div>
+                      <div class="trial-configuration-box">
+                        <span class="trial-config-title"
+                          >Products in the Trial</span
+                        >
+                        <span class="trial-config-content">3 </span>
+                      </div>
+                      <!-- _______________ Card List Duration Stepper ___________________ -->
+
+                      <div class="trial-duration-config">
+                        <div class="trial-config-date start-date">
+                          <span class="trial-config-title">Start Date</span>
+                          <span class="trial-config-content"
+                            >Apr 20, 2024
+                          </span>
+                        </div>
+                        <ul class="trial-stepper">
+                          <li class="trial-stepper-list">
+                            <span class="trial-dot active"></span>
+                            <div class="trail-progress"></div>
+                            <div class="trial-time-estimation">
+                              <span class="icon-clock"></span><strong>2</strong>
+                              days remaining
+                            </div>
+                            <span class="trial-dots"></span>
+                          </li>
+                        </ul>
+                        <div class="trial-config-date expiry-date">
+                          <span class="trial-config-title">Expiry Date</span>
+                          <span class="trial-config-content"
+                            >Jun 20, 2024
+                          </span>
+                        </div>
+                      </div>
+                      <!-- _______________ Card List Duration Stepper ___________________ -->
+                    </div>
+                  </div>
+                  <div class="trial-button-group">
+                    <button
+                      class="btn trial-primary-btn"
+                      onclick="openSidebar()"
+                    >
+                      View Summary
+                    </button>
+                    <button class="btn trial-link">View Details</button>
+                  </div>
+                </div>
+                <!-- _______________ Card List ___________________ -->
+                <div class="customer-trial-cardList">
+                  <div class="trial-product-image">
+                    <img src="./img/Graphics.png" alt="router" />
+                  </div>
+                  <div class="trial-product-detail">
+                    <div class="trial-product-title">
+                      <h5>Cisco Meraki Wifi 7 for Raytheon</h5>
+                      <div class="trial-badge trial-badge-success">Active</div>
+                      <div class="trial-badge trial-badge-primary">
+                        Extended
+                      </div>
+                    </div>
+                    <div class="trial-product-config">
+                      <div class="trial-configuration-box">
+                        <span class="trial-config-title">Trial ID</span>
+                        <span class="trial-config-content">92390921 </span>
+                      </div>
+                      <div class="trial-configuration-box">
+                        <span class="trial-config-title"
+                          >Products in the Trial</span
+                        >
+                        <span class="trial-config-content">3 </span>
+                      </div>
+                      <!-- _______________ Card List Duration Stepper ___________________ -->
+
+                      <div class="trial-duration-config">
+                        <div class="trial-config-date start-date">
+                          <span class="trial-config-title">Start Date</span>
+                          <span class="trial-config-content"
+                            >Apr 10, 2024
+                          </span>
+                        </div>
+                        <ul class="trial-stepper">
+                          <li class="trial-stepper-list">
+                            <span class="trial-dot active"></span>
+                            <div class="trail-progress"></div>
+                            <div class="trial-time-estimation">
+                              <span class="icon-clock"></span><strong>8</strong>
+                              days remaining
+                            </div>
+                            <span class="trial-dots"></span>
+                          </li>
+                        </ul>
+                        <div class="trial-config-date expiry-date">
+                          <span class="trial-config-title">Expiry Date</span>
+                          <span class="trial-config-content"
+                            >Jun 25, 2024
+                          </span>
+                        </div>
+                      </div>
+                      <!-- _______________ Card List Duration Stepper ___________________ -->
+                    </div>
+                  </div>
+                  <div class="trial-button-group">
+                    <button
+                      class="btn trial-primary-btn"
+                      onclick="openSidebar()"
+                    >
+                      View Summary
+                    </button>
+                    <button class="btn trial-link">View Details</button>
+                  </div>
+                </div>
+                <!-- _______________ Card List ___________________ -->
+              </div>
+            </div>
+            <!-- _______________ Tabs Content ___________________ -->
+            <!-- _______________ Tabs Content ___________________ -->
+
+            <div id="Extension" class="trial-content">
+              <div class="customer-trial-card">
+                <!-- _______________ Card List ___________________ -->
+                <div class="customer-trial-cardList">
+                  <div class="trial-product-image">
+                    <img src="./img/modam.png" alt="router" />
+                  </div>
+                  <div class="trial-product-detail">
+                    <div class="trial-product-title">
+                      <h5>Cisco Catalyst 9166 for Seamless Experience</h5>
+                      <div class="trial-badge trial-badge-extand">
+                        Extension Requested
+                      </div>
+                    </div>
+                    <div class="trial-product-config">
+                      <div class="trial-configuration-box">
+                        <span class="trial-config-title">Trial ID</span>
+                        <span class="trial-config-content">92390921 </span>
+                      </div>
+                      <div class="trial-configuration-box">
+                        <span class="trial-config-title"
+                          >Products in the Trial</span
+                        >
+                        <span class="trial-config-content">3 </span>
+                      </div>
+                      <!-- _______________ Card List Duration Stepper ___________________ -->
+
+                      <div class="trial-duration-config">
+                        <div class="trial-config-date start-date">
+                          <span class="trial-config-title">Start Date</span>
+                          <span class="trial-config-content"
+                            >Apr 15, 2024
+                          </span>
+                        </div>
+                        <ul class="trial-stepper">
+                          <li class="trial-stepper-list trial-period-expired">
+                            <span class="trial-dot active"></span>
+                            <div class="trail-progress"></div>
+                            <div class="trial-time-estimation">
+                              <span class="icon-clock"></span>Expired
+                            </div>
+                            <span class="trial-dots"></span>
+                          </li>
+                        </ul>
+                        <div class="trial-config-date expiry-date">
+                          <span class="trial-config-title">Expiry Date</span>
+                          <span class="trial-config-content"
+                            >Jun 15, 2024
+                          </span>
+                        </div>
+                      </div>
+                      <!-- _______________ Card List Duration Stepper ___________________ -->
+                    </div>
+                  </div>
+                  <div class="trial-button-group">
+                    <button
+                      class="btn trial-primary-btn"
+                      onclick="openSidebar()"
+                    >
+                      View Summary
+                    </button>
+                    <button class="btn trial-link">View Details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- _______________ Tabs Content ___________________ -->
+
+            <!-- _______________ Tabs Content ___________________ -->
+
+            <div id="Expired" class="trial-content">
+              <div class="customer-trial-card">
+                <!-- _______________ Card List ___________________ -->
+                <div class="customer-trial-cardList">
+                  <div class="trial-product-image">
+                    <img src="./img/modam.png" alt="router" />
+                  </div>
+                  <div class="trial-product-detail">
+                    <div class="trial-product-title">
+                      <h5>Cisco Catalyst 9163E for Enterprise</h5>
+                      <div class="trial-badge trial-badge-danger">Expired</div>
+                    </div>
+                    <div class="trial-product-config">
+                      <div class="trial-configuration-box">
+                        <span class="trial-config-title">Trial ID</span>
+                        <span class="trial-config-content">92390921 </span>
+                      </div>
+                      <div class="trial-configuration-box">
+                        <span class="trial-config-title"
+                          >Products in the Trial</span
+                        >
+                        <span class="trial-config-content">5 </span>
+                      </div>
+                      <!-- _______________ Card List Duration Stepper ___________________ -->
+                      <div class="trial-duration-config">
+                        <div class="trial-config-date start-date">
+                          <span class="trial-config-title">Start Date</span>
+                          <span class="trial-config-content"
+                            >Apr 10, 2024
+                          </span>
+                        </div>
+                        <ul class="trial-stepper">
+                          <li class="trial-stepper-list trial-period-expired">
+                            <span class="trial-dot active"></span>
+                            <div class="trail-progress"></div>
+                            <div class="trial-time-estimation">
+                              <span class="icon-clock"></span>Expired
+                            </div>
+                            <span class="trial-dots"></span>
+                          </li>
+                        </ul>
+                        <div class="trial-config-date expiry-date">
+                          <span class="trial-config-title">Expiry Date</span>
+                          <span class="trial-config-content"
+                            >Jun 10, 2024
+                          </span>
+                        </div>
+                      </div>
+                      <!-- _______________ Card List Duration Stepper ___________________ -->
+                    </div>
+                  </div>
+                  <div class="trial-button-group">
+                    <button
+                      class="btn trial-primary-btn"
+                      onclick="openSidebar()"
+                    >
+                      View Summary
+                    </button>
+                    <button class="btn trial-link">View Details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- _______________ Tabs Content ___________________ -->
+
+      <div class="offcanvas-sidebar" id="offcanvas-sidebar">
+        <div class="offcanvas-sidebar-header" id="offcanvas-sidebar-header">
+          Trail Summary
+        </div>
+        <a href="#" class="closebtn" onclick="closeSidebar()">&times;</a>
+
+        <div class="offcanvas-sidebar-body">
+          <div class="trial-sidebar-product-detail">
+            <div class="sidebar-product-image">
+              <img src="./img/Sidebar-Network.png" alt="" />
+            </div>
+            <div class="sidebar-product-content">
+              <span class="sidebar-product-title">Opportunity</span>
+              <h4 class="sidebar-product-heading">
+                Cisco Meraki Wifi 7 for Metlife
+              </h4>
+              <div class="sidebar-product-status-list">
+                <div class="sidebar-product-status-item">
+                  <span class="trial-config-title">Trial ID</span>
+                  <span class="trial-config-content">93159802 </span>
+                </div>
+                <div class="sidebar-product-status-item">
+                  <span class="trial-config-title">Estimated List Value</span>
+                  <span class="trial-config-content">USD 30,000 </span>
+                </div>
+                <div class="sidebar-product-status-item">
+                  <span class="trial-config-title">Products on a Trial</span>
+                  <span class="trial-config-content">Jun 15, 2024 </span>
+                </div>
+                <div class="sidebar-product-status-item">
+                  <span class="trial-config-title">Trial Status</span>
+                  <div class="trial-badge trial-badge-success">Active</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="trial-sidebar-product-timeline">
+            <div class="sidebar-product-timeline-heading">
+              <img src="./img/timeline-trial-order.svg" alt="" />
+              <h6 class="product-timeline-heading">Timeline of Trial Order</h6>
+            </div>
+            <div class="sidebar-product-timeline-stepper">
+              <div class="trial-duration-config sidebar-timeline-stepper">
+                <div class="trial-config-date start-date">
+                  <span class="trial-config-title">Start Date</span>
+                  <span class="trial-config-content">Jun 15, 2024 </span>
+                </div>
+                <ul class="trial-stepper">
+                  <li class="trial-stepper-list">
+                    <span class="trial-dot active"></span>
+                    <div class="trail-progress"></div>
+                    <div class="trial-time-estimation">
+                      <span class="icon-clock"></span><strong>88</strong>
+                      days remaining
+                    </div>
+                    <span class="trial-dots"></span>
+                  </li>
+                </ul>
+                <div class="trial-config-date expiry-date">
+                  <span class="trial-config-title">Expiry Date</span>
+                  <span class="trial-config-content">Sep 15, 2024 </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="trial-sidebar-product-timeline">
+            <div class="sidebar-product-timeline-heading">
+              <img src="./img/trial-product-com.svg" alt="" />
+              <h6 class="product-timeline-heading">Product Details</h6>
+            </div>
+            <div>
+              <table class="trial-sidebar-payment-content-table">
+                <thead>
+                  <tr>
+                    <th>Product Name</th>
+                    <th>Trial Quantity</th>
+                    <th>Usage</th>
+                    <th>Converted</th>
+                    <th>Returned</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Cisco Meraki MR44-HW</td>
+                    <td>12</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>2</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="trial-sidebar-table-divider"></div>
+              <table class="trial-sidebar-payment-content-table">
+                <thead>
+                  <tr>
+                    <th>Product Name</th>
+                    <th>Trial Quantity</th>
+                    <th>Usage</th>
+                    <th>Converted</th>
+                    <th>Returned</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Cisco Meraki MR76-HW</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>1</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="trial-sidebar-table-divider"></div>
+              <table class="trial-sidebar-payment-content-table">
+                <thead>
+                  <tr>
+                    <th>Product Name</th>
+                    <th>Trial Quantity</th>
+                    <th>Usage</th>
+                    <th>Converted</th>
+                    <th>Returned</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Cisco Meraki MR56-HW</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>0</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="trial-sidebar-product-timeline">
+            <div class="sidebar-product-timeline-heading">
+              <img src="./img/trial-Dollar.svg" alt="" />
+              <h6 class="product-timeline-heading">Payment Details</h6>
+            </div>
+            <div class="trial-sidebar-payment-content">
+              <div class="trial-sidebar-payment-item">
+                <span class="trial-config-title"
+                  >Charges after Trial Expiry</span
+                >
+                <span class="trial-config-content">USD 15,000 </span>
+              </div>
+              <div class="trial-sidebar-payment-item">
+                <span class="trial-config-title">Credit Card Charge Date</span>
+                <span class="trial-config-content">Oct 10, 2024</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- _______________ Customer Trials Section ___________________   -->
+    </div>
+    <div
+      id="trial-overlay-container"
+      class="trial-overlay-container"
+      onclick="closeSidebar()"
+    ></div>
+    <div id="trial-overlay" class="trial-overlay"></div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

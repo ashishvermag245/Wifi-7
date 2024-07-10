@@ -1,0 +1,782 @@
+body,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: CiscoSans, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+/* __________________ Icons ______________________ */
+
+@font-face {
+  font-family: CiscoSans;
+  src: url(../fonts/standard/CiscoSansTTThin.woff2) format("woff2");
+  font-display: swap;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 100;
+  unicode-range: U+0000-00FF, U+2000-20Cf, U+2150-215f;
+}
+
+@font-face {
+  font-family: CiscoSans;
+  src: url(../fonts/standard/CiscoSansTTThinOblique.woff2) format("woff2");
+  font-display: swap;
+  font-stretch: normal;
+  font-style: oblique;
+  font-weight: 100;
+  unicode-range: U+0000-00FF, U+2000-20Cf, U+2150-215f;
+}
+
+@font-face {
+  font-family: CiscoSans;
+  src: url(../fonts/standard/CiscoSansTTExtraLight.woff2) format("woff2");
+  font-display: swap;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 200;
+  unicode-range: U+0000-00FF, U+2000-20Cf, U+2150-215f;
+}
+
+@font-face {
+  font-family: CiscoSans;
+  src: url(../fonts/standard/CiscoSansTTExtraLightOblique.woff2) format("woff2");
+  font-display: swap;
+  font-stretch: normal;
+  font-style: oblique;
+  font-weight: 200;
+  unicode-range: U+0000-00FF, U+2000-20Cf, U+2150-215f;
+}
+
+@font-face {
+  font-family: CiscoSans;
+  src: url(../fonts/standard/CiscoSansTTLight.woff2) format("woff2");
+  font-display: swap;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 300;
+  unicode-range: U+0000-00FF, U+2000-20Cf, U+2150-215f;
+}
+
+@font-face {
+  font-family: CiscoSans;
+  src: url(../fonts/standard/CiscoSansTTLightOblique.woff2) format("woff2");
+  font-display: swap;
+  font-stretch: normal;
+  font-style: oblique;
+  font-weight: 300;
+  unicode-range: U+0000-00FF, U+2000-20Cf, U+2150-215f;
+}
+
+@font-face {
+  font-family: CiscoSans;
+  src: url(../fonts/standard/CiscoSansTTRegular.woff2) format("woff2");
+  font-display: swap;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: CiscoSans;
+  src: url(../fonts/standard/CiscoSansTTRegularOblique.woff2) format("woff2");
+  font-display: swap;
+  font-stretch: normal;
+  font-style: oblique;
+  font-weight: 400;
+  unicode-range: U+0000-00FF, U+2000-20Cf, U+2150-215f;
+}
+
+@font-face {
+  font-family: CiscoSans;
+  src: url(../fonts/standard/CiscoSansTTCondRegular.woff2) format("woff2");
+  font-display: swap;
+  font-stretch: condensed;
+  font-style: normal;
+  font-weight: 400;
+  unicode-range: U+0000-00FF, U+2000-20Cf, U+2150-215f;
+}
+
+@font-face {
+  font-family: CiscoSans;
+  src: url(../fonts/standard/CiscoSansTTMedium.woff2) format("woff2");
+  font-display: swap;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 500;
+  unicode-range: U+0000-00FF, U+2000-20Cf, U+2150-215f;
+}
+
+@font-face {
+  font-family: CiscoSans;
+  src: url(../fonts/standard/CiscoSansTTMediumOblique.woff2) format("woff2");
+  font-display: swap;
+  font-stretch: normal;
+  font-style: oblique;
+  font-weight: 500;
+  unicode-range: U+0000-00FF, U+2000-20Cf, U+2150-215f;
+}
+
+@font-face {
+  font-family: CiscoSans;
+  src: url(../fonts/standard/CiscoSansTTBold.woff2) format("woff2");
+  font-display: swap;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 700;
+  unicode-range: U+0000-00FF, U+2000-20Cf, U+2150-215f;
+}
+
+@font-face {
+  font-family: CiscoSans;
+  src: url(../fonts/standard/CiscoSansTTBoldOblique.woff2) format("woff2");
+  font-display: swap;
+  font-stretch: normal;
+  font-style: oblique;
+  font-weight: 700;
+  unicode-range: U+0000-00FF, U+2000-20Cf, U+2150-215f;
+}
+
+@font-face {
+  font-family: CiscoSans;
+  src: url(fonts/standard/CiscoSansTTCondBold.woff2) format("woff2");
+  font-display: swap;
+  font-stretch: condensed;
+  font-style: normal;
+  font-weight: 700;
+  unicode-range: U+0000-00FF, U+2000-20Cf, U+2150-215f;
+}
+
+@font-face {
+  font-family: CiscoSans;
+  src: url(../fonts/standard/CiscoSansTTHeavy.woff2) format("woff2");
+  font-display: swap;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 900;
+  unicode-range: U+0000-00FF, U+2000-20Cf, U+2150-215f;
+}
+
+@font-face {
+  font-family: CiscoSans;
+  src: url(../fonts/standard/CiscoSansTTHeavyOblique.woff2) format("woff2");
+  font-display: swap;
+  font-stretch: normal;
+  font-style: oblique;
+  font-weight: 900;
+  unicode-range: U+0000-00FF, U+2000-20Cf, U+2150-215f;
+}
+
+/* __________________ Icons ______________________ */
+
+/* _______________ Header ___________________  */
+
+.trial-entry-header .primary-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.trial-entry-header .primary-content h2 {
+  color: #19191d;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.32px;
+  margin: 0;
+}
+.trial-entry-header-menu {
+  padding: 26px 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+/* __________________ Dropdowns ______________________ */
+
+.trial-entry-header-menu .trial-dropdown {
+  display: flex;
+  align-items: center;
+}
+.trial-entry-header-menu .trial-dropdown .trial-dropdown-button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.trial-entry-header-menu span {
+  color: #1b1c1d;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+.trial-entry-header-menu .trial-dropdown-title {
+  color: #0070d2;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.trial-entry-header-menu .trial-divider {
+  margin: 0 8px;
+  width: 2px;
+  height: 12px;
+  background-color: #d6d6d6;
+}
+.trial-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  background: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #d6d6d6;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
+  z-index: 9;
+}
+.trial-dropdown-menu ul {
+  padding: 0;
+  width: 160px;
+  margin: 0;
+  list-style: none;
+}
+
+.trial-dropdown-menu li a:hover {
+  background-color: #f4f5f6;
+}
+.trial-dropdown-menu a {
+  color: #606162;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  display: block;
+  padding: 10px 16px;
+}
+.trial-dropdown-menu-usd {
+  right: 0;
+}
+.trial-dropdown-menu-sort {
+  right: 0;
+}
+
+/* __________________ Dropdown ______________________ */
+
+/* _______________ Header ___________________  */
+/* _______________ Customer Trials Section ___________________  */
+.trial-main {
+  background: #f4f5f6;
+  padding: 0px 40px 16px;
+  min-height: calc(100vh - 32px);
+}
+.trial-showcase {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+.trial-showcase .customer-trial {
+  max-width: 100%;
+  width: 100%;
+}
+/* __________________ Tabs ______________________ */
+
+.customer-trial .customer-trial-tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.trial-navtab {
+  cursor: pointer;
+  color: #1b1c1d;
+  transition: color 0.3s;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.trial-navtab.active {
+  font-weight: 700;
+}
+.trial-underline {
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  border-radius: 4px;
+  background: #0070d2;
+  transition: left 0.3s ease, width 0.3s ease;
+}
+.trial-content {
+  display: none;
+}
+
+.trial-content.active {
+  display: block;
+}
+/* __________________ Tabs ______________________ */
+
+.trial-sort-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.customer-trial-tabs .trial-sort {
+  border-radius: 64px;
+  background: #ffffff;
+  display: flex;
+  padding: 8px 16px;
+  align-items: center;
+  gap: 16px;
+}
+.trial-sort span {
+  color: #0070d2;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.trial-navtabs {
+  display: flex;
+  gap: 24px;
+  padding: 10px 20px 10px 0;
+  position: relative;
+}
+.trial-duration-config {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 450px;
+}
+.trial-configuration-box {
+  flex: 1;
+}
+
+/* _______________ Customer Trials Section ___________________  */
+
+/* -------------------- customer-trial CardzLIst ------------------- */
+.customer-trial .customer-trial-title h5 {
+  color: #1b1c1d;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0 0 8px;
+}
+.customer-trial-cardList {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  border-radius: 4px;
+  background: #ffffff;
+  padding-right: 24px;
+  margin-bottom: 8px;
+}
+.trial-product-title {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.customer-trial-card .trial-product-title h5 {
+  margin: 0;
+}
+.customer-trial-cardList .trial-product-image {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="130" height="122" fill="none"><path opacity=".2" d="M0 0h73.066L130 122H56.934L0 0Z" fill="%239DC9C8"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 18px 16px;
+}
+.trial-product-detail {
+  width: 100%;
+  padding: 18px 0;
+}
+.trial-product-config {
+  display: flex;
+  align-items: center;
+}
+span.trial-config-title {
+  display: block;
+  color: #606162;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  margin-bottom: 4px;
+}
+span.trial-config-content {
+  display: block;
+  color: #1b1c1d;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.trial-product-image img {
+  max-width: 130px;
+  height: 80px;
+}
+.trial-button-group {
+  margin-left: 8px;
+  text-align: center;
+}
+.trial-primary-btn {
+  padding: 6px 24px;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 16px;
+  background: #0070D2;
+  line-height: 20px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+.trial-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #0070d2;
+  border: none;
+  background: transparent;
+}
+/* _____________ Stepper ____________ */
+
+.trial-stepper {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+}
+.trial-stepper .trial-progress {
+  position: absolute;
+  top: 15px;
+  width: 75%;
+  --bs-progress-bar-bg: #0d6efd;
+}
+.trial-stepper .trial-stepper-list {
+  position: relative;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.trial-stepper span.trial-dot {
+  width: 30px;
+  height: 30px;
+  background-color: #ebebeb;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="none"><path d="M7.607 14.27a.563.563 0 0 1-.4-.166L3.138 10.11a.57.57 0 0 1-.006-.808.565.565 0 0 1 .808-.005l3.597 3.534 7.023-9.383a.574.574 0 0 1 .802-.114c.252.189.303.55.114.802l-7.41 9.904a.572.572 0 0 1-.412.229h-.046Z" fill="%23fff"/></svg>');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.trial-stepper span.trial-dot.active {
+  background-color: #0070d2;
+}
+.trial-stepper span.trial-dots {
+  width: 21px;
+  height: 21px;
+  background: #ebebeb;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+}
+
+.trial-stepper .trial-time-estimation {
+  background-color: #ebebeb;
+  border-radius: 20px;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  color: #1b1c1d;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  padding: 6px 12px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.trial-time-estimation .icon-clock {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M.875 7A6.132 6.132 0 0 1 7 .875 6.132 6.132 0 0 1 13.125 7 6.132 6.132 0 0 1 7 13.125 6.132 6.132 0 0 1 .875 7Zm.875 0A5.254 5.254 0 0 0 7 12.25 5.254 5.254 0 0 0 12.25 7 5.254 5.254 0 0 0 7 1.75 5.254 5.254 0 0 0 1.75 7Zm5.381-3.281a.44.44 0 0 1 .436-.438c.24.001.435.198.435.438v3.85a.445.445 0 0 1-.131.31L5.814 9.892a.427.427 0 0 1-.306.127.442.442 0 0 1-.31-.132.44.44 0 0 1 .008-.616l1.925-1.886V3.719Zm.436-.438h.002-.005.003Z" fill="%231B1C1D"/></svg>');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.trial-icon-angle-down {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path d="m8 12.455-6.27-6.88a.499.499 0 1 1 .74-.67L8 10.97l5.53-6.065a.499.499 0 1 1 .74.67L8 12.45v.005Z" fill="%230070D2"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+.trial-icon-sort {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.476 2.967H16.2a.58.58 0 0 1 .579.578.58.58 0 0 1-.579.579H3.476a.58.58 0 0 1-.578-.579.58.58 0 0 1 .578-.578Zm0 4.193h9.913a.58.58 0 0 1 .579.578.58.58 0 0 1-.579.579H3.476a.58.58 0 0 1-.578-.579.58.58 0 0 1 .578-.578Zm7.519 4.303H3.476a.58.58 0 0 0-.578.579c0 .318.26.578.578.578h7.519a.58.58 0 0 0 .578-.578.58.58 0 0 0-.578-.579ZM3.47 15.767h4.355a.58.58 0 0 1 .579.578.58.58 0 0 1-.579.578H3.47a.58.58 0 0 1-.578-.578.58.58 0 0 1 .578-.578Z" fill="%230070D2"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+.trail-progress {
+  flex: 1;
+  height: 4px;
+  background-color: #0070d2;
+}
+.trial-period-expired .trial-time-estimation {
+  background-color: #fff2f1;
+  color: #e3241b;
+}
+.trial-period-expired .trial-time-estimation .icon-clock {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M.875 7A6.132 6.132 0 0 1 7 .875 6.132 6.132 0 0 1 13.125 7 6.132 6.132 0 0 1 7 13.125 6.132 6.132 0 0 1 .875 7Zm.875 0A5.254 5.254 0 0 0 7 12.25 5.254 5.254 0 0 0 12.25 7 5.254 5.254 0 0 0 7 1.75 5.254 5.254 0 0 0 1.75 7Zm5.381-3.281a.44.44 0 0 1 .436-.438c.24.001.435.198.435.438v3.85a.445.445 0 0 1-.131.31L5.814 9.892a.427.427 0 0 1-.306.127.442.442 0 0 1-.31-.132.44.44 0 0 1 .008-.616l1.925-1.886V3.719Zm.436-.438h.002-.005.003Z" fill="%23E3241B"/></svg>');
+}
+.trial-period-expired .trail-progress {
+  background-color: #e3241b;
+}
+.trial-period-expired span.trial-dots {
+  background-color: #e3241b;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.351 13.36 8.575 1.446c-.179-.308-.685-.308-.864 0L.935 13.36a.505.505 0 0 0 0 .497.49.49 0 0 0 .427.248h13.552a.484.484 0 0 0 .427-.248.505.505 0 0 0 0-.497h.01Zm-13.13-.253L8.142 2.692l5.922 10.415H2.22Zm6.428-2.075a.63.63 0 0 0-.233-.159.869.869 0 0 0-.273-.06.743.743 0 0 0-.496.214.75.75 0 0 0-.209.501c0 .095.015.184.05.273a.777.777 0 0 0 .149.234.711.711 0 0 0 .496.208.731.731 0 0 0 .492-.213.75.75 0 0 0 .218-.492.765.765 0 0 0-.05-.278.618.618 0 0 0-.154-.233l.01.005ZM7.433 6.008c0-.174.055-.338.154-.477h.005a.772.772 0 0 1 .407-.288.724.724 0 0 1 .477.075c.148.08.263.203.332.352.055.11.075.234.065.358 0 .209-.015.417-.03.63v.015c-.01.15-.02.298-.025.447 0 .367-.03.745-.06 1.112l-.016.208c-.011.127-.022.252-.028.378v.536a.56.56 0 0 1-.164.377c-.1.1-.233.154-.377.154a.565.565 0 0 1-.378-.149.547.547 0 0 1-.173-.367c-.024-.49-.052-.975-.08-1.464l-.005-.08a78.214 78.214 0 0 1-.064-1.107l-.04-.71Z" fill="%23fff"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 30px;
+  height: 30px;
+}
+/* _____________ Stepper ____________ */
+
+/* -------------------- customer-trial CardList ------------------- */
+
+/* _____________ badges ____________ */
+
+.trial-badge {
+  display: flex;
+  padding: 4px 6px;
+  align-items: center;
+  gap: 4px;
+  border-radius: 4px;
+  color: #1b1c1d;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+}
+.trial-badge-success {
+  background: #ddf2d8;
+}
+.trial-badge-extand {
+  background: #ffe6bd;
+}
+.trial-badge-primary {
+  background: #d7eafc;
+}
+.trial-badge-danger {
+  background: #ffdad8;
+}
+/* _____________ badges ____________ */
+
+/* _____________ Sidebar ____________ */
+.trial-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.4;
+  display: none;
+  height: 100%;
+  width: 100%;
+  z-index: 6;
+}
+.trial-overlay-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.4;
+  display: none;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.offcanvas-sidebar * {
+  box-sizing: border-box;
+}
+.offcanvas-sidebar {
+  height: 100%;
+  width: 752px;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  transform: translateX(100%);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+}
+.offcanvas-sidebar a {
+  font-weight: 100;
+  padding: 0 30px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.offcanvas-sidebar .closebtn {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  right: 13px;
+  font-size: 40px;
+  margin-top: 14px;
+}
+.offcanvas-sidebar .offcanvas-sidebar-header {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #1b1c1d;
+  padding: 22px 24px;
+  background-color: #f1f7fd;
+  border-bottom: 1px solid #D6D6D6;
+}
+.offcanvas-sidebar-body {
+  padding: 16px 24px 24px;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-product-image {
+  background-image: url(../img/sidebar-product-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.trial-sidebar-product-detail {
+  display: flex;
+  gap: 32px;
+  /* margin: 16px 0 24px; */
+}
+.sidebar-product-content {
+  padding: 16px 0 24px;
+}
+.sidebar-product-title {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: #606162;
+  margin-bottom: 4px;
+}
+.sidebar-product-heading {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  color: #1b1c1d;
+  max-width: 315px;
+}
+.sidebar-product-status-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 10px;
+  margin-top: 24px;
+}
+.sidebar-product-status-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.trial-sidebar-product-timeline {
+  border-radius: 8px;
+  border: 1px solid #D6D6D6;
+  padding: 16px;
+  background: #ffffff;
+  margin-top: 12px;
+}
+.sidebar-product-timeline-heading {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 22px;
+}
+.product-timeline-heading {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #1b1c1d;
+}
+.sidebar-timeline-stepper {
+  max-width: 100%;
+}
+.trial-sidebar-payment-content {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.trial-sidebar-payment-item {
+  max-width: 200px;
+  width: 100%;
+}
+
+.trial-sidebar-payment-content-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+}
+
+table.trial-sidebar-payment-content-table th,
+table.trial-sidebar-payment-content-table td {
+  padding: 6px 0px 0;
+  text-align: left;
+}
+table.trial-sidebar-payment-content-table th {
+  padding: 0px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: #606162;
+}
+.trial-sidebar-table-divider{
+  background:  #D6D6D6;
+  width: 100%;
+height: 1px;
+}
+
+
+
+/* _____________ Sidebar ____________ */
